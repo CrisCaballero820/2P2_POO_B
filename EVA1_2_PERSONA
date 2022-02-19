@@ -1,0 +1,48 @@
+package eva1_2_clase_persona;
+
+public class Eva1_2_clase_persona {
+    
+    public static void main(String[] args) {
+        //Implementación
+        System.out.println("Hola Mundo");
+        Persona estudiante = new Persona();
+        estudiante.id = "00112233";
+        estudiante.nombre = "Juan Perez Jolote";
+        estudiante.edad = 19;
+        estudiante.imprimirDatos();
+        System.out.println("Año de nacimiento es: " + estudiante.calculaAaño());
+        //Concatenar = Pegar cadenas de texto
+        
+        Persona estudiante2 = new Persona();
+        estudiante2.id = "11111111";
+        estudiante2.nombre = "Ruebn";
+        estudiante2.edad = 40;
+        estudiante2.imprimirDatos();
+        System.out.println("Año de nacimiento es: " + estudiante2.calculaAaño());
+        
+        Persona estudiante3 = new Persona();
+        estudiante3.id = "222";
+        estudiante3.nombre = "Alex";
+        estudiante3.edad = 30;
+        estudiante3.imprimirDatos();
+        System.out.println("Año de nacimiento es: " + estudiante3.calculaAaño());
+    }
+    
+}
+class Persona{
+    //Atributos de la clase
+    String id;
+    String nombre;
+    int edad;
+    
+    void imprimirDatos(){
+        System.out.println("El nombre es: " + nombre);
+        System.out.println("Su id es " + id);
+        System.out.println("Su edad es " + edad);
+    }
+    //Calcular edad
+    int calculaAaño(){
+        int Año = 2022 - edad;
+        return Año;
+    }
+}
