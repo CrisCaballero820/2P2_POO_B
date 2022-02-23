@@ -1,0 +1,52 @@
+package eva1_3_mod_acceso;
+
+public class EVA1_3_MOD_ACCESO {
+
+    public static void main(String[] args) {
+        Persona per1 = new Persona();
+        per1.setID("00112233");
+        per1.setNombre("Ruben");
+        per1.setEdad(40);
+        System.out.println("Nombre: " + per1.getNombre());
+        
+        Persona per2 = new Persona();
+        per2.setID("546545");
+        per2.setNombre("Luis");
+        per2.setEdad(19);
+        System.out.println("Nombre: " + per2.getNombre() + ", " + per2.getID());
+    }
+    
+}
+
+class Persona {
+//ATRIBUTOS
+    private String ID;
+    private String nombre;
+    private int edad;
+//COMPORTAMIENTO
+//PARA LEER Y MODIFICAR LOS ATRIBUTOS, USAMOS METODOS DE LECTURA/ESCRITURA
+    
+//LEER - GET
+    public String getID(){
+    return ID;
+    }
+    public String getNombre(){
+    return nombre;
+    }
+    public int getEdad(){
+    return edad;
+    }
+    
+//ASIGNAR - SET
+    public void setID(String valor){
+    ID = valor;
+    }
+    public void setNombre(String valor){
+    nombre = valor;
+    }
+    public void setEdad(int valor){
+    edad = valor;
+    }
+    
+            
+}
