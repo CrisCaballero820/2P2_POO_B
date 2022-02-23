@@ -1,0 +1,66 @@
+package eva1_4_clase_auto;
+
+public class EVA1_4_CLASE_AUTO {
+
+    public static void main(String[] args) {
+        Automovil miAuto = new Automovil();
+        miAuto.setMarca("Ford");
+        miAuto.setModelo("Mustang");
+        miAuto.setTipo("Sedan");
+        miAuto.setAño(2002);
+        miAuto.setColor("Rojo");
+        miAuto.setPrecio(116700.00);
+        System.out.println("Marca: " + miAuto.getMarca());
+        System.out.println("Modelo: " + miAuto.getModelo());
+        System.out.println("Año: " + miAuto.getAño());
+    }
+    
+}
+class Automovil{
+//ATRIBUTOS PRIVADOS
+    private String marca;
+    private String modelo;
+    private String tipo;
+    private int año;
+    private String color;
+    private double precio;
+//COMPORTAMIENTO
+//METODOS GET Y SET
+    public void setMarca (String valor){
+        marca = valor;
+    }
+    public String getMarca (){
+        return marca;
+    }
+    public void setModelo (String valor){
+        modelo = valor;
+    }
+    public String getModelo (){
+        return modelo;
+    }
+    public void setTipo (String valor){
+        tipo = valor;
+    }
+    public String getTipo (){
+        return tipo;
+    }
+    public void setAño (int valor){
+        año = valor;
+    }
+    public int getAño (){
+        return año;
+    }
+    public void setColor (String valor){
+        color = valor;
+    }
+    public String getColor (){
+        return color;
+    }
+    public void setPrecio (double valor){
+        precio = valor;
+    }
+    public double getPrecio (){
+        return precio;
+    }
+    
+}
