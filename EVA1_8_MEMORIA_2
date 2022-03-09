@@ -1,0 +1,22 @@
+package eva1_8_Memoria_2;
+
+public class EVA1_8_MEMORIA_2 {
+    
+    public static void main(String[] args) {
+        System.out.println("Inicia Main");
+        A();
+        System.out.println("Termina Main");
+    }
+    
+    public static void A() {
+        System.out.println("Inicia A()");
+        B();
+        System.out.println("Termina A()");
+    }
+    public static void B() {
+        System.out.println("Incia B()");
+        System.out.println("Termina B()");
+    
+    }
+    
+}
