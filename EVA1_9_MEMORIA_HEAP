@@ -1,0 +1,19 @@
+package EVA1_9_MEMORIA_HEAP;
+
+public class eva1_9_memoria_heap {
+    
+    public static void main(String[] args){
+    int i = 5;
+    Prueba obj = new Prueba();
+        System.out.println(obj);
+         System.out.println(obj.valor);
+    Prueba obj2 = new Prueba();
+        System.out.println(obj2);
+         System.out.println(obj2.valor);
+    obj2 = null;
+        System.out.println(obj2.valor);
+    }  
+}
+class Prueba{
+    int valor = 100;
+}
