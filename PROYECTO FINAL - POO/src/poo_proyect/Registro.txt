@@ -1,0 +1,5 @@
+Registro
+ID: 
+Nombres: aa
+Edad: ss
+Telefono: aa
