@@ -1,5 +1,0 @@
-Registro
-ID: 
-Nombres: 12222
-Edad: ee
-Telefono: 49894
